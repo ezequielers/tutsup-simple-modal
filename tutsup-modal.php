@@ -50,6 +50,9 @@ if ( ! class_exists('TutsupModalSettings') ) {
 
 				// Add the theme menu
 				add_action('admin_menu', array( $this, 'tutsup_menu_options' ) );
+				
+				$plugin = plugin_basename( __FILE__ );
+				add_filter( "plugin_action_links_$plugin", array( $this, 'plugin_add_settings_link' ) );
 			} 
 			
 			// Isn't admin
@@ -58,6 +61,12 @@ if ( ! class_exists('TutsupModalSettings') ) {
 				add_action( 'wp_footer', array( $this, 'enqueue_public_scripts' ), 1000 );
 				
 			}
+		}
+		
+		public function plugin_add_settings_link( $links ) {
+			$settings_link = '<a href="options-general.php?page=tutsup-simple-modal">Config.</a>';
+			array_push( $links, $settings_link );
+			return $links;
 		}
 		
 		/**
@@ -69,7 +78,7 @@ if ( ! class_exists('TutsupModalSettings') ) {
 				__('Tutsup Modal', 'tutsup'),
 				__('Tutsup Modal', 'tutsup'),
 				'manage_options', 
-				'tutsup_theme_options', 
+				'tutsup-simple-modal', 
 				array( $this, 'tutsup_page' ) 
 			);
 
@@ -99,7 +108,7 @@ if ( ! class_exists('TutsupModalSettings') ) {
 				echo '<h2 class="nav-tab-wrapper">';
 				foreach( $tabs as $tab => $name ){
 					$class = ( $tab == $current ) ? ' nav-tab-active' : '';
-					echo "<a class='nav-tab$class' href='?page=tutsup_theme_options&tab=$tab'>$name</a>";
+					echo "<a class='nav-tab$class' href='?page=tutsup-simple-modal&tab=$tab'>$name</a>";
 				}
 				echo '</h2>';
 			}
