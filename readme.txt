@@ -4,7 +4,7 @@ Donate link: http://www.tutsup.com/
 Tags: modal
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,3 +34,6 @@ Yes! And CSS too.
 
 = 0.1 =
 * Creation.
+
+= 0.2 =
+* Fix path for the configuration file
