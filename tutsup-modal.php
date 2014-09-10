@@ -55,7 +55,7 @@ if ( ! class_exists('TutsupModalSettings') ) {
 			// Isn't admin
 			else {
 				// Plugin styles and scripts
-				add_action( 'wp_footer', array( $this, 'enqueue_public_scripts' ) );
+				add_action( 'wp_footer', array( $this, 'enqueue_public_scripts' ), 1000 );
 				
 			}
 		}
@@ -127,9 +127,7 @@ if ( ! class_exists('TutsupModalSettings') ) {
 		/**
 		 * Loads the styles and scripts (public)
 		 */
-		public function enqueue_public_scripts() {
-			wp_enqueue_script('jquery');
-			
+		public function enqueue_public_scripts() {			
 			$tutsup_option = get_option('tutsup_modal');
 			
 ?>
