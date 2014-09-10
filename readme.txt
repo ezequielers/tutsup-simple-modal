@@ -38,3 +38,6 @@ Yes! And CSS too.
 = 0.2 =
 * Fix path for the configuration file.
 * Fix pt_PT language.
+
+= 0.2.1 =
+* Add Config. menu.
