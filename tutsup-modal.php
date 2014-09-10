@@ -3,7 +3,7 @@
 Plugin Name: Tutsup Modal
 Plugin URI: http://www.tutsup.com/
 Description: This plugin allows you to create simple modals in your site/blog. You can put any custom HTML and CSS inside your modal, like subscription forms, warnings, advertisement, simple text, or whatever you want. It's really simple.
-Version: 0.1
+Version: 0.2
 Author: Luiz Otávio Miranda
 Author URI: http://www.tutsup.com/
 License: GPLv2 or later
