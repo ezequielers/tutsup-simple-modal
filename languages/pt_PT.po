@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tutsup\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Luiz Otavio Miranda <contato@tutsup.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+msgid "Main"
+msgstr "Principal"
+
+msgid "HTML and CSS Settings"
+msgstr "HTML e CSS"
+
+msgid "Modal Options"
+msgstr "Opções do modal"
+
+msgid "Here you can configure your modal settings (HTML and CSS)."
+msgstr "Aqui você pode configurar as opções do seu modal (HTML e CSS)."
+
+msgid "Modal HTML"
+msgstr "HTML do modal"
+
+msgid "CSS for the HTML above"
+msgstr "CSS para o HTML acima"
+
+msgid "Display modal after"
+msgstr "Mostrar modal depois de"
+
+msgid ""
+"Seconds (Leave it blank for default behavior, which is when the user moves "
+"the mouse out of the body)"
+msgstr ""
+"Segundos (Deixe em branco para o comportamento padrão, que é quando o "
+"usuário move o mouse para fora do body)"
