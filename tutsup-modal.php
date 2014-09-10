@@ -105,7 +105,7 @@ if ( ! class_exists('TutsupModalSettings') ) {
 			}
 			
 			// If you want to edit, go to the views folder
-			require '/views/settings.php';
+			require dirname( __FILE__ ) . '/views/settings.php';
 		}
 		
 		/**
