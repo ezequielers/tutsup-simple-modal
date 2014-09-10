@@ -36,4 +36,5 @@ Yes! And CSS too.
 * Creation.
 
 = 0.2 =
-* Fix path for the configuration file
+* Fix path for the configuration file.
+* Fix pt_PT language.
