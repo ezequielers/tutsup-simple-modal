@@ -10,7 +10,7 @@
 	<?php
 	/* Include the HTML for the current tab */
 	if ( $tab === 'tutsup-index' ): tab_settings('tutsup-index'); include('tutsup-index.php'); 
-	//elseif ( $tab === 'theme' ): tab_settings('theme'); include('theme.php'); 
+	elseif ( $tab === 'tutsup-modal-style' ): tab_settings('tutsup-modal-style'); include('tutsup-modal-style.php'); 
 	endif;
 	?>
 	
