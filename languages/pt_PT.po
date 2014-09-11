@@ -33,6 +33,21 @@ msgstr "CSS para o HTML acima"
 msgid "Display modal after"
 msgstr "Mostrar modal depois de"
 
+msgid "Modal Style"
+msgstr "Estilo do modal"
+
+msgid "Here you can change your modal style (CSS)"
+msgstr "Aqui você pode modificar o estilo do modal (CSS)."
+
+msgid "Width and height"
+msgstr "Largura e altura"
+
+msgid "Width"
+msgstr "Largura"
+
+msgid "Height"
+msgstr "Altura"
+
 msgid ""
 "Seconds (Leave it blank for default behavior, which is when the user moves "
 "the mouse out of the body)"
