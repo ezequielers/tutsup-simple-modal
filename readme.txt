@@ -41,3 +41,6 @@ Yes! And CSS too.
 
 = 0.2.1 =
 * Add Config. menu.
+
+= 0.2.2 =
+* Modal style options added (Width and Height).
