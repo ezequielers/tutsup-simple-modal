@@ -90,12 +90,22 @@ function tutsup_modal_init($) {
 	}
 }
 
+function tutsup_modal_exit($) {
+	$('.tutsup-modal-bg').css('display', 'none');
+	$('.tutsup-modal').css('display', 'none');
+	document.cookie = 'tutsup-modal=1';
+}
+
 jQuery(function($){
-	$('.tutsup-modal-close').click(function(){
-		$('.tutsup-modal-bg').css('display', 'none');
-		$('.tutsup-modal').css('display', 'none');
-		document.cookie = 'tutsup-modal=1';
-	});
+	$('.tutsup-modal-close').click(function() {tutsup_modal_exit($)});
+	$('.tutsup-modal-bg').click(function() {tutsup_modal_exit($)});
+	$(document).ready(function(){
+    $(document).bind('keydown', function(e) { 
+        if (e.which == 27) {
+           tutsup_modal_exit($);
+        }
+    }); 
+});
 
 	<?php 
 	$modal_seconds = tutsup_check_option( $tutsup_option, 'tutsup-modal-seconds' );
